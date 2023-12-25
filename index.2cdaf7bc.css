@@ -1,0 +1,81 @@
+@font-face {
+  font-family: Avenir;
+  src: url("Avenir-Book.21abf061.ttf");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: Avenir;
+  src: url("Avenir-Heavy.9246a2b0.ttf");
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.search-bar {
+  margin-top: 20px;
+  display: block;
+  position: relative;
+}
+
+.search-bar:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+.search-bar--big:after {
+  background-image: url("Search.f4d21c8a.svg");
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top: 25px;
+  left: 26px;
+}
+
+.search-bar--small:after {
+  background-image: url("Search.f4d21c8a.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 11px;
+  height: 11px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.search-bar__input {
+  border: 1px solid #e1e7ed;
+  border-radius: 4px;
+  outline: none;
+  width: 100%;
+  font-family: Avenir, sans-serif;
+  box-shadow: 0 1px 8px #3d4e611a;
+}
+
+.search-bar__input-big {
+  height: 70px;
+  padding-left: 62px;
+  font-size: 16px;
+}
+
+.search-bar__input-small {
+  height: 42px;
+  padding-left: 33px;
+  font-size: 14px;
+}
+
+.search-bar:hover {
+  box-shadow: 0 3px 8px #3d4e6133;
+}
+
+.search-bar__input:focus {
+  background: linear-gradient(#fff 0%, #f6f6f7 100%);
+  border-radius: 3px;
+  font-family: Aveni-Heavy, sans-serif;
+  font-weight: 800;
+}
+
+/*# sourceMappingURL=index.2cdaf7bc.css.map */
